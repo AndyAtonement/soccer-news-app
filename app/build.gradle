@@ -49,4 +49,8 @@ dependencies {
 
     //Picasso - https://github.com/square/picasso
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    // Room - https://developer.android.google.cn/training/data-storage/room?hl=pt-br#kts
+    implementation "androidx.room:room-runtime:2.4.3"
+    annotationProcessor "androidx.room:room-compiler:2.4.3"
 }
