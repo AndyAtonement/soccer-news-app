@@ -48,7 +48,7 @@
             tools:text="As meninas da Ferrinha derrotaram o Palmeiras no último domingo." />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_openlink"
+            android:id="@+id/btnOpenlink"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
         <ImageView
-            android:id="@+id/iv_favorites"
+            android:id="@+id/ivFavorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
@@ -71,9 +71,9 @@
             android:clickable="true"
             android:focusable="true"
             android:padding="4dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_openlink"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOpenlink"
             app:layout_constraintEnd_toStartOf="@+id/iv_share"
-            app:layout_constraintTop_toTopOf="@+id/btn_openlink"
+            app:layout_constraintTop_toTopOf="@+id/btnOpenlink"
             app:srcCompat="@drawable/ic_favorite" />
 
         <ImageView
@@ -86,9 +86,9 @@
             android:clickable="true"
             android:focusable="true"
             android:padding="4dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_openlink"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOpenlink"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btn_openlink"
+            app:layout_constraintTop_toTopOf="@+id/btnOpenlink"
             app:srcCompat="@drawable/ic_share" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
