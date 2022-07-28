@@ -36,10 +36,17 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         News news = this.news.get(position);
+<<<<<<< HEAD
         holder.binding.tvTitle.setText(news.title);
         holder.binding.tvDescription.setText(news.description);
         Picasso.get().load(news.image).fit().into(holder.binding.ivThumbnail);
         //Implementação da funcionalidade de "Abrir Link"
+=======
+        holder.binding.tvTitle.setText(news.getTitle());
+        holder.binding.tvDescription.setText(news.getDescription());
+        Picasso.get().load(news.getImage()).fit().into(holder.binding.ivThumbnail);
+        // Implemenmtação Funcionalidade de "Abrir Link":
+>>>>>>> 0f3e3a5563c2fa7d2a47d34d3b7532bb86861cb8
         holder.binding.btnOpenlink.setOnClickListener(view -> {
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(news.link));
